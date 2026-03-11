@@ -1,0 +1,7 @@
+README.md
+setup.py
+proyecto_jorge.egg-info/PKG-INFO
+proyecto_jorge.egg-info/SOURCES.txt
+proyecto_jorge.egg-info/dependency_links.txt
+proyecto_jorge.egg-info/requires.txt
+proyecto_jorge.egg-info/top_level.txt
