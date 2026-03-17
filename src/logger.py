@@ -19,4 +19,18 @@ logging.basicConfig(
 )
 
 
+from exception import error_message_detail , CustomException
+import sys
+
 logging.info("Logger funcionando")
+
+
+if __name__=="__main__":
+    try:
+        a=1/0
+
+    except Exception as e:
+        
+        logging.info('empezo el logging')
+
+        raise CustomException(e,sys)
