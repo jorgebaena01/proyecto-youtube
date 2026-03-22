@@ -22,8 +22,11 @@ def loggeador(x):
 
 from exception import error_message_detail , CustomException
 import sys
+
+
+
 from logger import logging
-#loggeador('corriengo logger papapapa')
+
 
 
 if __name__=="__main__":

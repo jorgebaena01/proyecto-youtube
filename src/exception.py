@@ -30,16 +30,6 @@ class CustomException(Exception):
     def __str__(self):
         return self.error_message
     
-from probando_logs import loggeador
-if __name__=="__main__":
-    try:
-        a=1/0
-
-    except Exception as e:
-        
-        loggeador('loggeando gonorrea')
-
-        raise CustomException(e,sys)
 
         
 
