@@ -5,3 +5,4 @@ env/
 *.egg-info/
 src/components/data_ingestion.py
 claves.txt
+logs/
