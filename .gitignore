@@ -3,6 +3,6 @@ venv/
 env/
 .venv/
 *.egg-info/
-src/components/data_ingestion.py
-claves.txt
+src/components/datos_crudos.csv
+src/components/claves.py
 logs/

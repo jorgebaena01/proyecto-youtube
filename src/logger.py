@@ -14,8 +14,8 @@ logging.basicConfig(
     level=logging.INFO,
 )
 
-
-from exception import error_message_detail , CustomException
+'''
+from src.exception import error_message_detail , CustomException
 import sys
 
 logging.info("Logger funcionando")
@@ -29,4 +29,4 @@ if __name__=="__main__":
         
         logging.info('empezo el logging')
 
-        raise CustomException(e,sys)
+        raise CustomException(e,sys)'''
