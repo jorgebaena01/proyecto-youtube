@@ -4,5 +4,6 @@ env/
 .venv/
 *.egg-info/
 src/components/datos_crudos.csv
+data/raw/datos_crudos.csv
 src/components/claves.py
 logs/

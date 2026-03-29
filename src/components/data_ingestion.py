@@ -13,12 +13,7 @@ from sklearn.model_selection import train_test_split
 
 
 
-df_vacio=pd.DataFrame(columns=['fecha_reporte_web', 'id_de_caso', 'fecha_de_notificaci_n',
-       'departamento', 'departamento_nom', 'ciudad_municipio',
-       'ciudad_municipio_nom', 'edad', 'unidad_medida', 'sexo',
-       'fuente_tipo_contagio', 'ubicacion', 'estado', 'recuperado',
-       'fecha_inicio_sintomas', 'fecha_muerte', 'fecha_diagnostico',
-       'per_etn_', 'fecha_recuperado', 'tipo_recuperacion', 'nom_grupo_'])
+
 
 
 
@@ -64,7 +59,7 @@ def ingesta():
             resultado1=pd.DataFrame.from_records(results)
             df_vacio=pd.concat([df_vacio,resultado1],ignore_index=True)
         df_vacio["id_de_caso"] = pd.to_numeric(df_vacio["id_de_caso"], errors="coerce").fillna(0).astype(int)
-        return df_vacio.to_csv("src/components/datos_crudos.csv")
+        return df_vacio.to_csv("data/raw/datos_crudos.csv")
     except Exception as e:
         
         logging.info('salio mal')
@@ -77,16 +72,6 @@ ingesta()
 logging.info("SE TERMINO DE CORRER EL BUCLE")
 
 
-
-
-'''
-print('el valor maximo es:',df_vacio['id_de_caso'].max())
-print('el valor promedio es:',df_vacio['id_de_caso'].mean())
-print('esta vuelta tiene:',len(df_vacio),'filas')
-print(df_vacio.head())'''
-
-
-print('sssssssttttttt')
 
 
 
