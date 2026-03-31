@@ -13,6 +13,9 @@ class lipieza_de_datos:
     pass
 
 
+# FALTA CREAR UN JUPYTER PARA PROBAR LA LIMPIEZA DE DATOS
+
+
 
 class split:
     def __init__(self, nombre_csv):
