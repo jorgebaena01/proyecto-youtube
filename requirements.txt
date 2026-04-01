@@ -2,4 +2,5 @@ pandas
 numpy
 sodapy
 scikit-learn
+matplotlib
 -e .
