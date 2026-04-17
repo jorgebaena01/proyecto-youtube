@@ -7,3 +7,6 @@ src/components/datos_crudos.csv
 data/raw/datos_crudos.csv
 src/components/claves.py
 logs/
+data/clean/datos_limpios.csv
+data/clean/X_test_csv.csv
+data/clean

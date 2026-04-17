@@ -41,6 +41,6 @@ if __name__=="__main__":
 
 
 
-from claves import 
+
 
 

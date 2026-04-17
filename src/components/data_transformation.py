@@ -21,7 +21,7 @@ class lipieza_de_datos:
             df=pd.read_csv(str(self.nombre_csv))
             cambios= {'BARRANQUILLA':'ATLANTICO','STA MARTA D.E.':'MAGDALENA','CARTAGENA':'BOLIVAR'}
             df['departamento_nom']=df['departamento_nom'].replace(cambios)
-
+            #USAR ONE HOT EENCODER PARA LAS VARIABLES CATEGORICAS!!!!!!!!!!!
             df.drop('departamento',axis=1, inplace=True)
             df.drop('ciudad_municipio',axis=1, inplace=True)
             df.drop('ciudad_municipio_nom',axis=1, inplace=True)
