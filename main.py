@@ -21,6 +21,22 @@ import datetime as dt
 import os
 
 
+from src.components.data_ingestion import ingesta
+ingesta()
+
+
+from src.components.data_transformation import lipieza_de_datos
+from src.components.data_transformation import splitter
+
+x=lipieza_de_datos('data/raw/datos_crudos.csv')
+x.limpiador()
+
+y=splitter('data/clean/datos_limpios.csv')
+y.grouper()
 
 
 
+from src.components.model_trainer import ModelTrainer
+
+z=ModelTrainer('data/clean/X_test_csv.csv','data/clean/X_train_csv.csv',2,'data/clean/y_train_csv.csv')
+z.linear_regression()
